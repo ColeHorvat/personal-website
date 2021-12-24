@@ -8,10 +8,13 @@ import Footer from '../components/Footer'
 import ProjectHeader from '../components/Projects/ProjectHeader'
 import Grid from '../components/Projects/Grid'
 import GridItem from '../components/Projects/GridItem'
+import PageHead from '../components/PageHead'
 
 export default function Home() {
   return (
     <Container>
+        <PageHead />
+
         <Header />
         <Hero />
 

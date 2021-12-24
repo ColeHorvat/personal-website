@@ -4,9 +4,6 @@ import Head from 'next/head'
 function GridItem() {
     return (
         <div className="rounded-lg bg-purple-400 h-52 p-2 relative">
-            <Head>
-                <script src="https://kit.fontawesome.com/177a052e26.js" crossorigin="anonymous"></script>
-            </Head>
             
             <h1>Title</h1>
             <h2>Description</h2>
