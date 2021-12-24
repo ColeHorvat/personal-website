@@ -5,12 +5,23 @@ import Header from '../components/Header'
 import Container from '../components/Container'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
+import ProjectHeader from '../components/Projects/ProjectHeader'
+import Grid from '../components/Projects/Grid'
+import GridItem from '../components/Projects/GridItem'
 
 export default function Home() {
   return (
     <Container>
         <Header />
         <Hero />
+
+        <ProjectHeader />
+        <Grid>
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
+        </Grid>
 
         <Footer/>
     </Container>
