@@ -20,7 +20,7 @@ export default function Home() {
 
         <ProjectHeader />
         <Grid>
-            <GridItem />
+            <GridItem isGame={true}/>
             <GridItem />
             <GridItem />
         </Grid>
