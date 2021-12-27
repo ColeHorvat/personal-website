@@ -23,7 +23,6 @@ export default function Home() {
             <GridItem />
             <GridItem />
             <GridItem />
-            <GridItem />
         </Grid>
 
         <Footer/>
