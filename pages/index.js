@@ -22,8 +22,6 @@ export default function Home() {
         <ProjectHeader />
         <Grid>
             <GridItem projectTitle={STRING_CONSTANTS.TASK_TITLE} projectDescription={STRING_CONSTANTS.TASK_DESCRIPTION}/>
-            <GridItem />
-            <GridItem />
         </Grid>
 
         <Footer/>
