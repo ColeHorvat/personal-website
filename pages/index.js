@@ -9,6 +9,7 @@ import ProjectHeader from '../components/Projects/ProjectHeader'
 import Grid from '../components/Projects/Grid'
 import GridItem from '../components/Projects/GridItem'
 import PageHead from '../components/PageHead'
+import STRING_CONSTANTS from '../public/Strings'
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
 
         <ProjectHeader />
         <Grid>
-            <GridItem isGame={true}/>
+            <GridItem projectTitle={STRING_CONSTANTS.TASK_TITLE} projectDescription={STRING_CONSTANTS.TASK_DESCRIPTION}/>
             <GridItem />
             <GridItem />
         </Grid>
