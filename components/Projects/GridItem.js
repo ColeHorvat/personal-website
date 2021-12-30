@@ -11,9 +11,18 @@ function GridItem(props) {
 
             <div className="flex-inline absolute bottom-0 right-0 mr-4 mb-2">
                 
-                <i className="fab fa-github pr-3"></i>
+                {/*ICONS*/}
+                {props.isVersion &&
+                    <a href={props.versionUrl} target="_blank" rel="noreferrer"><i className="fab fa-github pr-3"></i></a>
+                }
+                
+
                 { props.isGame &&
-                    <i className="fas fa-play"></i>
+                    <a href={props.playUrl} target="_blank" rel="noreferrer"><i className="fas fa-play"></i></a>
+                }
+
+                { props.isWebsite &&
+                    <a href={props.playUrl} target="_blank" rel="noreferrer"><i className="fas fa-code"></i></a>
                 }
             </div>
 

@@ -21,10 +21,24 @@ export default function Home() {
 
         <ProjectHeader />
         <Grid>
-            <GridItem projectTitle={STRING_CONSTANTS.TASK_TITLE} projectDescription={STRING_CONSTANTS.TASK_DESCRIPTION}/>
+            <GridItem 
+            isVersion={true}
+            versionUrl={STRING_CONSTANTS.TASK_VERSION} 
+            projectTitle={STRING_CONSTANTS.TASK_TITLE} 
+            projectDescription={STRING_CONSTANTS.TASK_DESCRIPTION}/>
+
+            <GridItem 
+            isWebsite={true}
+            playUrl={STRING_CONSTANTS.UNIGRAMS_URL}
+            projectTitle={STRING_CONSTANTS.UNIGRAMS_TITLE} 
+            projectDescription={STRING_CONSTANTS.UNIGRAMS_DESCRIPTION}/>
         </Grid>
 
-        <Footer/>
+        <Footer
+        twitterUrl={STRING_CONSTANTS.FOOTER_TWITTER}
+        githubUrl={STRING_CONSTANTS.FOOTER_GITHUB}
+        linkedinUrl={STRING_CONSTANTS.FOOTER_LINKEDIN}
+        />
     </Container>
     )
 }
