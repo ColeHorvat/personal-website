@@ -6,6 +6,10 @@ module.exports = {
     extend: {
         colors: {
             'icon-blue' : '#59C2FF' 
+        },
+
+        scale : {
+            'project-hover' : '1.025'
         }
     },
   },

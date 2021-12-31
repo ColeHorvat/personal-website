@@ -9,7 +9,7 @@ function Hero() {
                 <h3 className="text-xl">I&apos;m a Full-Stack Web Developer and Game Developer based out of British Columbia, Canada! 🇨🇦 <br />Currently working as a <span className="font-medium">Web Development Consultant</span> at <span className="font-medium underline text-sky-500"><a href="https://www.kaianalytics.com/" target="_blank" rel="noreferrer">Kai Analytics!</a></span></h3>
             </div>
 
-            <div className="flex justify-center lg:justify-end px-5">
+            <div className="flex justify-center lg:justify-end mb-10 lg:mb-0 px-5">
                 <div className="bg-icon-blue lg:my-5">
                     <Avatar
                         avatarStyle='Transparent'

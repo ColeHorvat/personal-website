@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 function GridItem(props) {
     return (
-        <div className="rounded-lg drop-shadow-xl shadow-inner bg-icon-blue/[0.9] h-52 p-2 relative">
+        <div className="rounded-lg shadow-md hover:shadow-xl hover:scale-project-hover bg-icon-blue/[0.9] h-52 p-2 relative">
 
             <h1 className="text-xl pb-5 font-medium">{props.project.title}</h1>
             <h2 className="text-lg font-normal">{props.project.description}</h2>
