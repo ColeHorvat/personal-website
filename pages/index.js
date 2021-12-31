@@ -21,17 +21,10 @@ export default function Home() {
 
         <ProjectHeader />
         <Grid>
-            <GridItem 
-            isVersion={true}
-            versionUrl={STRING_CONSTANTS.TASK_VERSION} 
-            projectTitle={STRING_CONSTANTS.TASK_TITLE} 
-            projectDescription={STRING_CONSTANTS.TASK_DESCRIPTION}/>
+            <GridItem project={STRING_CONSTANTS.TASK_TIMER}/>
+            <GridItem project={STRING_CONSTANTS.UNIGRAMS_WEBSITE}/>
+            <GridItem project={STRING_CONSTANTS.LOST_AND_FOUND}/>
 
-            <GridItem 
-            isWebsite={true}
-            playUrl={STRING_CONSTANTS.UNIGRAMS_URL}
-            projectTitle={STRING_CONSTANTS.UNIGRAMS_TITLE} 
-            projectDescription={STRING_CONSTANTS.UNIGRAMS_DESCRIPTION}/>
         </Grid>
 
         <Footer

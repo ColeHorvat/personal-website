@@ -3,7 +3,11 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+            'icon-blue' : '#59C2FF' 
+        }
+    },
   },
   plugins: [],
 }
