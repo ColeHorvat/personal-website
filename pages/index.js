@@ -9,7 +9,7 @@ import ProjectHeader from '../components/Projects/ProjectHeader'
 import Grid from '../components/Projects/Grid'
 import GridItem from '../components/Projects/GridItem'
 import PageHead from '../components/PageHead'
-import STRING_CONSTANTS from '../public/Strings'
+import STRING_CONSTANTS from '../components/Strings'
 
 export default function Home() {
   return (
@@ -28,9 +28,9 @@ export default function Home() {
         </Grid>
 
         <Footer
-        twitterUrl={STRING_CONSTANTS.FOOTER_TWITTER}
-        githubUrl={STRING_CONSTANTS.FOOTER_GITHUB}
-        linkedinUrl={STRING_CONSTANTS.FOOTER_LINKEDIN}
+            twitterUrl={STRING_CONSTANTS.FOOTER_TWITTER}
+            githubUrl={STRING_CONSTANTS.FOOTER_GITHUB}
+            linkedinUrl={STRING_CONSTANTS.FOOTER_LINKEDIN}
         />
     </Container>
     )

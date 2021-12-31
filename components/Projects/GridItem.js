@@ -26,7 +26,7 @@ function GridItem(props) {
                 }
             </div>
 
-            </div>
+        </div>
     )
 }
 
