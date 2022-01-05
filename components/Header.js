@@ -20,7 +20,7 @@ function Header() {
                 <motion.div className="relative flex items-center justify-between h-16 px-5">
                     <motion.a className="text-xl font-medium p-2 hover:bg-gray-200" href="">Cole Horvat</motion.a>
                     <motion.a className="text-xl p-2 hover:bg-gray-200" href="/Cole_Horvat_Resume.pdf" target="_blank">Resume</motion.a>
-                    {/* ADD DARK MODE BUTTON */}
+                    {/* ADD DARK MODE BUTTON LATER */}
                 </motion.div>
             </motion.div>
         </motion.nav>
