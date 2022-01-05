@@ -27,6 +27,22 @@ const STRING_CONSTANTS = {
         versionUrl : 'https://github.com/ColeHorvat/Global-Game-Jam-2021',
     },
 
+    SOLITAIRE : {
+        isVersion : true,
+        title : 'Java Solitaire',
+        description : 'A text-based solitaire game created for my Data Structures & Algorithms course to show competency in using the Stack and Queue data structures.',
+        versionUrl : 'https://github.com/ColeHorvat/Data-Structure-Solitaire'
+    },
+
+    OVERHAUL : { 
+        isVersion : true,
+        isGame : true,
+        title : 'Overhaul',
+        description : 'A 2-D action platformer that I created for Global Game Jam Kamloops 2020. I did the majority of the scripting, AI, combat mechanics, and built the level.',
+        playUrl : 'https://globalgamejam.org/2020/games/overhaul-6-0',
+        versionUrl : 'https://github.com/ColeHorvat/Overhaul'
+    },
+
     //FOOTER CONSTANTS
     FOOTER_EMAIL : 'ColeHorvat@gmail.com',
     FOOTER_TWITTER : 'https://twitter.com/HorvatCole',
