@@ -4,6 +4,10 @@ import Head from 'next/head'
 function Container({ children }) {
     return (
         <div className="relative max-w-7xl mx-0 md:mx-auto px-0 sm:px-6 lg:px-8">
+            <Head>
+                <title>Cole Horvat</title>
+                <link rel="icon" type="image/x-icon" href="../public/web_avatar.ico"/>
+            </Head>
             {children}
         </div>
     )
