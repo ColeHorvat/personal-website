@@ -32,8 +32,6 @@ const STRING_CONSTANTS = {
     FOOTER_TWITTER : 'https://twitter.com/HorvatCole',
     FOOTER_GITHUB : 'https://github.com/ColeHorvat',
     FOOTER_LINKEDIN : 'https://www.linkedin.com/in/cole-horvat-629913173/',
-
-
 }
 
 export default STRING_CONSTANTS;

@@ -1,32 +1,44 @@
 import React from 'react'
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 
+const ITEM_ANIM_DURATION = 0.5
+
+const gridItemVar = {
+    hidden : { scale: 0},
+    visible : { scale: 1 }
+}
 
 function GridItem(props) {
     return (
-        <div className="rounded-lg shadow-md border border-transparent hover:shadow-xl hover:border-black/[0.2] bg-icon-blue/[0.9] h-52 p-2 relative">
+        <motion.div 
+            initial="hidden"
+            animate="visible"
+            variants={gridItemVar}
+            transition={{ duration: ITEM_ANIM_DURATION, delay: props.animDelay }}
+            className="rounded-lg shadow-md border border-transparent hover:shadow-xl hover:border-black/[0.2] bg-icon-blue/[0.9] h-52 p-2 relative">
 
-            <h1 className="text-xl pb-5 font-medium">{props.project.title}</h1>
-            <h2 className="text-lg font-normal">{props.project.description}</h2>
+            <motion.h1 className="text-xl pb-5 font-medium">{props.project.title}</motion.h1>
+            <motion.h2 className="text-lg font-normal">{props.project.description}</motion.h2>
 
-            <div className="flex-inline absolute bottom-0 right-0 mr-4 mb-2">
+            <motion.div className="flex-inline absolute bottom-0 right-0 mr-4 mb-2">
                 
                 {/*ICONS*/}
                 {props.project.isVersion &&
-                    <a href={props.project.versionUrl} target="_blank" rel="noreferrer"><i className="fab fa-github p-2 hover:bg-sky-300"></i></a>
+                    <motion.a href={props.project.versionUrl} target="_blank" rel="noreferrer"><i className="fab fa-github p-2 hover:bg-sky-300"></i></motion.a>
                 }
                 
 
                 { props.project.isGame &&
-                    <a href={props.project.playUrl} target="_blank" rel="noreferrer"><i className="fas fa-play p-2 hover:bg-sky-300"></i></a>
+                    <motion.a href={props.project.playUrl} target="_blank" rel="noreferrer"><i className="fas fa-play p-2 hover:bg-sky-300"></i></motion.a>
                 }
 
                 { props.project.isWebsite &&
-                    <a href={props.project.playUrl} target="_blank" rel="noreferrer"><i className="fas fa-code p-2 hover:bg-sky-300"></i></a>
+                    <motion.a href={props.project.playUrl} target="_blank" rel="noreferrer"><i className="fas fa-code p-2 hover:bg-sky-300"></i></motion.a>
                 }
-            </div>
+            </motion.div>
 
-        </div>
+        </motion.div>
     )
 }
 

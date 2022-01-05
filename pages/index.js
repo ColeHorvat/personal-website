@@ -21,9 +21,9 @@ export default function Home() {
 
         <ProjectHeader />
         <Grid>
-            <GridItem project={STRING_CONSTANTS.TASK_TIMER}/>
-            <GridItem project={STRING_CONSTANTS.UNIGRAMS_WEBSITE}/>
-            <GridItem project={STRING_CONSTANTS.LOST_AND_FOUND}/>
+            <GridItem project={STRING_CONSTANTS.TASK_TIMER} animDelay={1}/>
+            <GridItem project={STRING_CONSTANTS.UNIGRAMS_WEBSITE} animDelay={1.25}/>
+            <GridItem project={STRING_CONSTANTS.LOST_AND_FOUND} animDelay={1.5}/>
 
         </Grid>
 
