@@ -27,7 +27,7 @@ function GridItem(props) {
 
             <motion.div className="flex-inline absolute bottom-0 right-0 mr-4 mb-2">
                 
-                {/*ICONS*/}
+                {/*ICONS SECTION*/}
                 {props.project.isVersion &&
                     <motion.a href={props.project.versionUrl} target="_blank" rel="noreferrer"><i className="fab fa-github p-2 hover:bg-sky-300"></i></motion.a>
                 }
