@@ -25,7 +25,7 @@ function Footer(props) {
                 </motion.ul>
             </motion.div>
             <motion.div className="flex px-2 items-center justify-center text-gray-500">
-                <motion.p>Built with Next.js and TailwindCSS</motion.p>
+                <motion.p className="text-base md:text-lg">Built with Next.js and TailwindCSS</motion.p>
             </motion.div>
         </motion.div>
     )
