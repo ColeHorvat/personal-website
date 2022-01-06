@@ -19,11 +19,15 @@ function GridItem(props) {
             className="rounded-lg shadow-md border border-transparent hover:shadow-xl hover:border-black/[0.2] bg-icon-blue/[0.9] h-52 p-2 relative">
 
             <motion.h1 className="text-xl pb-5 font-medium">{props.project.title}</motion.h1>
-            <motion.h2 className="text-lg font-normal">{props.project.description}</motion.h2>
+            <motion.h2 className=" text-sm sm:text-base md:text-lg font-normal">{props.project.description}</motion.h2>
+
+            <motion.div className="flex-inline absolute bottom-0 left-0 ml-2 mb-3">
+                <motion.p className="text-sm sm:text-base md:text-lg font-normal"><motion.span className="font-medium">Tools: </motion.span>{props.project.tools}</motion.p>
+            </motion.div>
 
             <motion.div className="flex-inline absolute bottom-0 right-0 mr-4 mb-2">
                 
-                {/*ICONS*/}
+                {/*ICONS SECTION*/}
                 {props.project.isVersion &&
                     <motion.a href={props.project.versionUrl} target="_blank" rel="noreferrer"><i className="fab fa-github p-2 hover:bg-sky-300"></i></motion.a>
                 }
