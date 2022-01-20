@@ -11,7 +11,7 @@ const leftText = {
 
 const rightText = {
     hidden : { opacity: 0},
-    visible : { opacity: 1}
+	visible : { opacity: 1 },
 }
 
 function Hero() {

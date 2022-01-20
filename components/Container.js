@@ -9,7 +9,7 @@ function Container({ children }) {
             </Head>
             {children}
         </div>
-    )
+	)
 }
 
 export default Container
