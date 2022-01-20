@@ -6,7 +6,7 @@ const ITEM_ANIM_DURATION = 0.5
 
 const gridItemVar = {
     hidden : { scale: 0},
-    visible : { scale: 1 }
+    visible : { scale: 1}
 }
 
 function GridItem(props) {
