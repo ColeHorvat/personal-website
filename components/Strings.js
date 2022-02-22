@@ -48,6 +48,14 @@ const STRING_CONSTANTS = {
         versionUrl : 'https://github.com/ColeHorvat/Overhaul'
     },
 
+    SOULLESS : { 
+        isGame : true,
+        title : 'Soulless',
+        description : 'A 2-D puzzle platformer that I created for Global Game Jam Kamloops 2022. I did all of the programming for the project within a 48 hour period.',
+        tools : 'C#, Unity',
+        playUrl : 'https://rabidblueberry.itch.io/soulless',
+    },
+
     //FOOTER CONSTANTS
     FOOTER_EMAIL : 'ColeHorvat@gmail.com',
     FOOTER_TWITTER : 'https://twitter.com/HorvatCole',
