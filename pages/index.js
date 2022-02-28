@@ -21,7 +21,6 @@ export default function Home() {
             <GridItem project={STRING_CONSTANTS.SOULLESS} animDelay={1.25}/>
             <GridItem project={STRING_CONSTANTS.TASK_TIMER} animDelay={1.5}/>
             <GridItem project={STRING_CONSTANTS.LOST_AND_FOUND} animDelay={2}/>
-            <GridItem project={STRING_CONSTANTS.OVERHAUL} animDelay={2.25}/>
         </Grid>
 
         <Footer
