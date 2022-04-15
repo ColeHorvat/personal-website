@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Container from '../components/Container'
@@ -11,7 +12,18 @@ import STRING_CONSTANTS from '../components/Strings'
 import BlogGrid from '../components/Blog/BlogGrid'
 import BlogItem from '../components/Blog/BlogItem'
 
-export default function Home() {
+import { getSortedPostsData } from '../lib/posts'
+
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData()
+    return {
+        props: {
+            allPostsData
+        }
+    }
+}
+
+export default function Home({ allPostsData }) {
   return (
     <Container>
         <Header />
@@ -27,7 +39,10 @@ export default function Home() {
 
         <SubHeader title="Blog"/>
         <BlogGrid>
-            <BlogItem />
+            {allPostsData.map(({id, date, title}, index) => (
+                // eslint-disable-next-line react/jsx-key
+                <BlogItem id = {id} date={date} title={title} index = {index}/>
+            ))}
         </BlogGrid>
 
 
