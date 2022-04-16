@@ -56,6 +56,14 @@ const STRING_CONSTANTS = {
         playUrl : 'https://rabidblueberry.itch.io/soulless',
     },
 
+    SHOPHOPPER : { 
+        isVersion : true,
+        title : 'ShopHopper Web Scraper',
+        description : 'As a capstone project, two other peers and I created a set of web scrapers for ShopHopper to scrape products from local stores. My main contribution was the Lightspeed implementation.',
+        tools : 'Node.js, Javascript',
+        versionUrl : 'https://github.com/ShopHopper-WebScraper-Project/2022-Webscraper-Project'
+    },
+
     //FOOTER CONSTANTS
     FOOTER_EMAIL : 'ColeHorvat@gmail.com',
     FOOTER_TWITTER : 'https://twitter.com/HorvatCole',
