@@ -7,6 +7,7 @@ import Container from '../../components/Container'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { motion } from "framer-motion"
+import STRING_CONSTANTS from '../../components/Strings'
 
 const CONTENT_ANIM_DURATION = 0.5
 
@@ -36,7 +37,11 @@ export default function Post({ postData }) {
 				</motion.div>
 				<div className="text-lg" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 			</motion.article>
-			<Footer />
+			<Footer            
+				twitterUrl={STRING_CONSTANTS.FOOTER_TWITTER}
+            	githubUrl={STRING_CONSTANTS.FOOTER_GITHUB}
+            	linkedinUrl={STRING_CONSTANTS.FOOTER_LINKEDIN} 
+			/>
 		</Container>
 	)
 }

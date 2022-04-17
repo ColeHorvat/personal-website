@@ -12,17 +12,16 @@ In this article, we're going to go over my main contribution to the project, the
 ## Initial Research
 When we started this project, we were given a list of sites to research, eight of which were sites that used the [Lightspeed](https://www.lightspeedhq.com/ecommerce/) site structure.  
 <br/>  
-After doing a brief online course on web-scraping using Node.js, I started doing the laborious and boring task of putting together an HTML webscraper for required data points. During this time I was also doing research to find a more efficient (and less agonizing) way to get the data from the sites. 
+After doing a brief online course on web-scraping using Node.js, I started doing the laborious and boring task of putting together an HTML webscraper for required data points :( . During this time I was also doing research to find a more efficient (and less agonizing) way to get the data from the sites.  
 <br/>  
 <br/>  
-<br/>   
 
 ## Eureka!
 A couple weeks in to the project, my teammate, Adan, pointed out that you could see API calls from websites using the **Network** tab in the Developer Tools. After testing this with the Lightspeed sites, I discovered that for each product being loaded, there was a call to a **.ajax** URL with the same name as that product.  
 
 ![alt text](/images/blog-images/capstone-article/cap-blog1.png)  
 
-Lo and behold! Each URL contained all the information and more that we needed on each product including pricing, availability, images, variants, and more! From there, the gears started turning, and I started thinking about a structure that would best suit the client.  
+Lo and behold! Each URL contained all the information and more that we needed on each product including pricing, availability, images, variants, and more! This completely changed the project since now I could get more data reliably since I wasn't scraping data from HTML anymore (for the most part). From there, the gears started turning, and I started thinking about a structure that would best suit the client.  
 <br/>  
 <br/>  
    
@@ -33,8 +32,7 @@ Early in the project, our client had told us that speed was not a top priority f
 - **- Ease of Use**
 - **- Readability**  
 
-These came from the fact that we were working with a small, fast-moving start-up with limited resrouces and programmers. The scraper needed to be easily scalable with minimal effort. The last thing I wanted was for my code to be thrown away in a handful of months because it was too costly or time-consuming to maintain and expand.
-<br/>  
+These came from the fact that we were working with a small, fast-moving start-up with limited resrouces and programmers. The scraper needed to be easily scalable with minimal effort. The last thing I wanted was for my code to be thrown away in a handful of months because it was too costly or time-consuming to maintain and expand.  
 <br/>  
 <br/>  
 
@@ -51,4 +49,22 @@ I split these tasks up between three files respectively:
 - **- product_url_scraper.js**
 - **- index.js**
 
-`site_objects.js` contains only a list of objects, each one representing a single website. In each object there are 7 properties, 5 required, 2 optional, that represent the URLs for the differnt store pages on the website, and the required CSS selectors to get the product page URLs.
+`site_objects.js` contains only a list of objects, each one representing a single website. In each object there are 7 properties, 5 required, 2 optional, that represent the URLs for the differnt store pages on the website, and the required CSS selectors to get the product page URLs.  
+<br />  
+`product_url_scraper.js` contains functions that takes the information from `site_objects.js`, goes through the product list on each store list, and scrapes the product URLs for each item. It then converts these **.html** URLs to **.ajax** and returns them all in an array. This is also where we get the **body_html** data point, but we'll get into that later.  
+<br />  
+Finally, `index.js` takes the URLs scraped in `product_url_scraper.js` and fetches the JSON data using **node-fetch**. This data is then cleaned to fit the data schema, added to a JSON array, and outputted in a .json file.  
+<br />  
+This structure makes it easier and much more intuitive to add websites to the scraper, and debug or expand in the future.  
+<br/>  
+<br/>
+
+## Challenges
+
+### Pagination
+
+### body_html
+
+### Variants
+
+### Images
