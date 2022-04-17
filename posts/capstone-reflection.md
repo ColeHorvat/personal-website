@@ -68,3 +68,7 @@ This structure makes it easier and much more intuitive to add websites to the sc
 ### Variants
 
 ### Images
+
+## End Result
+
+## Conclusion
