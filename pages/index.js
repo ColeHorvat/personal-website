@@ -39,9 +39,9 @@ export default function Home({ allPostsData }) {
 
         <SubHeader title="Blog"/>
         <BlogGrid>
-            {allPostsData.map(({id, date, title}, index) => (
+            {allPostsData.map(({id, date, title, hashtags}, index) => (
                 // eslint-disable-next-line react/jsx-key
-                <BlogItem id = {id} date={date} title={title} index = {index}/>
+                <BlogItem id = {id} date={date} title={title} hashtags={hashtags} index={index}/>
             ))}
         </BlogGrid>
 

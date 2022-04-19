@@ -32,6 +32,12 @@ export default function Post({ postData }) {
 				className="px-5"
 			>
 				<motion.h1 className="text-4xl font-bold mt-12 mb-6">{postData.title}</motion.h1>
+				<motion.div className="flex text-lg, my-6 flex-row flex-wrap">
+					{postData.hashtags.map((hashtag) => (
+						// eslint-disable-next-line react/jsx-key
+						<p>#{hashtag} &ensp;</p> 
+					))}
+				</motion.div>
 				<motion.div className="text-xl mb-4 text-gray-600">
 					<Date dateString={postData.date} />
 				</motion.div>

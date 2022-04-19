@@ -1,10 +1,16 @@
 ---
 title: 'A Reflection on my 2022 Capstone Project'
-date: '2022-04-17'
+date: '2022-04-20'
+hashtags: ['webdev', 'node', 'javascript', 'scraper']
 ---
 
-For the capstone project of my Bachelors of Computer Science, two peers and I were tasked by a start-up out of Kelowna to create a set of web scrapers that would retrieve product data from local stores.  
-<br/>   
+Hi! For those of you who don't know me, I'm Cole. I develop video games and have participated in six game jams in the past 3 years, have had almost two years of web development experience between internships and contract jobs, had a brief stint as an actor in an embarrasingly bad Christmas movie, and now I'm completing my Bachelor of Computing Science at Thompson Rivers University.  
+<br/>  
+<br/>  
+
+For the capstone project of my degree, two peers and I were tasked by a start-up out of Kelowna to create a set of web scrapers that would retrieve product data from local stores. I was drawn to this project because while I had a lot of experience with web development, I had never worked professionally with Javascript or Node.js. I wanted to do a project that highlighted my exisiting skills in web development, while also developing new ones. To be honest, I also just didn't want to get stuck with a research project. 
+<br/>  
+<br/>  
 In this article, we're going to go over my main contribution to the project, the Lightspeed site structure implementation from the beginning. The decisions made, the challenges faced, the methods used, and the end result. I would also recommend you check out the work of my peers [Justin Howson](https://github.com/justin-howson), and [Adan Sierra Calderon](https://github.com/adancalderon), who did invaluable work on this project.  
 <br/>  
 <br/>  

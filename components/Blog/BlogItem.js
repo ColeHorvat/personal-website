@@ -12,21 +12,30 @@ const gridItemVar = {
 
 function BlogItem(props) {
     return (
-        <motion.div
-		initial="hidden"
-            animate="visible"
-            variants={gridItemVar}
-            transition={{ duration: ITEM_ANIM_DURATION, delay: (props.index * 0.25) + 1 }}
-            className="rounded-lg shadown-md border border-tranparent hover:shadow-xl bg-gray-100 h-24 p-2 relative"
-        >
-           <Link href={`/posts/${props.id}`}>
-				<a className="text-xl font-medium">{props.title}</a>
-           </Link> 
-		   <br />
-		   <small className="text-base italic">
-			   <Date dateString={props.date} />
-		   </small>
-        </motion.div>
+        <Link href={`/posts/${props.id}`}>
+            <a>
+                <motion.div
+                initial="hidden"
+                    animate="visible"
+                    variants={gridItemVar}
+                    transition={{ duration: ITEM_ANIM_DURATION, delay: (props.index * 0.25) + 1 }}
+                    className="rounded-lg shadown-md border border-tranparent hover:shadow-xl bg-gray-100 h-fit p-2 relative"
+                >
+                <p className="text-xl font-medium">{props.title}</p>
+                
+                <br />
+                <small className="text-base italic">
+                    <Date dateString={props.date} />
+                </small>
+                <motion.div className="flex flex-row flex-wrap mt-2">
+                        {props.hashtags.map((hashtag) => (
+                            // eslint-disable-next-line react/jsx-key
+                            <p>#{hashtag} &ensp;</p> 
+                        ))}
+                </motion.div>
+                </motion.div>
+            </a>
+        </Link>
     )
 }
 
