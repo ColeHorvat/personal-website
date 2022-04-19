@@ -21,13 +21,12 @@ function BlogItem(props) {
                     transition={{ duration: ITEM_ANIM_DURATION, delay: (props.index * 0.25) + 1 }}
                     className="rounded-lg shadown-md border border-tranparent hover:shadow-xl bg-gray-100 h-fit p-2 relative"
                 >
-                <p className="text-xl font-medium">{props.title}</p>
+                <p className="text-xl font-medium mb-3">{props.title}</p>
                 
-                <br />
                 <small className="text-base italic">
                     <Date dateString={props.date} />
                 </small>
-                <motion.div className="flex flex-row flex-wrap mt-2">
+                <motion.div className="flex flex-row flex-wrap mt-2 text-base">
                         {props.hashtags.map((hashtag) => (
                             // eslint-disable-next-line react/jsx-key
                             <p>#{hashtag} &ensp;</p> 
