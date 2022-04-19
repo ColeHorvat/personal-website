@@ -118,4 +118,4 @@ The Lightspeed scraper alone gets 1150 products in 12.5 minutes across 7 stores.
 <br/>  
   
 ## Conclusion
-This project allowed me to strengthen the skills I already had in web development, while also learning new skills like web scraping, using Node.js and libraries like node-fetch, cheerio, and request-promise, and allowed me to do work that will hopefully be used for years to come, and expand the business opportunities for our client.
+This project allowed me to strengthen the skills I already had in web development, while also developing new ones. I was able to display my fore-thought about the future of a project, my problem-solving skills, my ability to learn new languages, tools, and techniques quickly, on a project that will provide value to our client for years to come.
