@@ -4,11 +4,11 @@ date: '2022-04-20'
 hashtags: ['webdev', 'node', 'javascript', 'webscraper']
 ---
 
-Hi! For those of you who don't know me, I'm Cole. I develop video games and have participated in six game jams in the past 3 years, have had almost two years of web development experience between internships and contract jobs, had a brief stint as an actor in an embarrassingly bad Christmas movie, and now I'm completing my Bachelor of Computing Science at Thompson Rivers University.  
+Hi! For those of you who don't know me, I'm Cole. I develop video games and have participated in six game jams in the past three years, have had almost two years of web development experience between internships and contract jobs, had a brief stint as an actor in an embarrassingly bad Christmas movie, and now I'm completing my Bachelor of Computing Science at Thompson Rivers University.  
 <br/>  
 <br/>  
 
-For the capstone project of my degree, two peers and I were tasked by a start-up out of Kelowna to create a set of web scrapers that would retrieve product data from local stores. I was drawn to this project because while I had a lot of experience with web development, I had never worked professionally with Javascript or Node.js. I wanted to do a project that highlighted my existing skills in web development, while also developing new ones. To be honest, I also just didn't want to get stuck with a research project. 
+For the capstone project of my degree, two peers and I were tasked to create a set of web scrapers that would retrieve product data from local stores by a start-up out of Kelowna. I was drawn to this project because while I had a lot of experience with web development, I had never worked professionally with Javascript or Node.js. I wanted to do a project that highlighted my existing skills in web development, while also developing new ones. To be honest, I also just didn't want to get stuck with a research project. 
 <br/>  
 <br/>  
 In this article, we're going to go over my main contribution to the project, the Lightspeed site structure implementation from the beginning. The decisions made, the challenges faced, the methods used, and the end result. I would also recommend you check out the work of my peers [Justin Howson](https://github.com/justin-howson), and [Adan Sierra Calderon](https://github.com/adancalderon), who did invaluable work on this project.  
@@ -27,7 +27,7 @@ A couple weeks into the project, my teammate, Adan, pointed out that you could s
 
 ![alt text](/images/blog-images/capstone-article/cap-blog1.png)  
 
-Lo and behold! Each URL contained all the information and more that we needed on each product including pricing, availability, images, variants, and more! This completely changed the project since now I could get more data reliably since I wasn't scraping data from HTML anymore (for the most part). From there, the gears started turning, and I started thinking about a structure that would best suit the client.  
+Lo and behold! Each URL contained a JSON object with all the information and more that we needed on each product including pricing, availability, images, variants, and more! This completely changed the project since now I could get more data reliably since I wasn't scraping data from HTML anymore (for the most part). From there, the gears started turning, and I started thinking about a structure that would best suit the client.  
 <br/>  
 <br/>  
    
@@ -97,7 +97,7 @@ Pagination was an issue that was worked on from the beginning of development all
 <br/>  
 
 ### body_html
-The `body_html` data point also provided a unique challenge during development. The `body_html` data point is the outerHTML property surrounding the description on each product page. Our client needed this data point so that they could have the description display in their app. Unlike the rest of the data points, `body_html` could not be gotten from the JSON, and had to be scraped before the URL is converted from a `.html` to a `.ajax` extension.  
+The `body_html` data point also provided a unique challenge during development. It stores the outerHTML property surrounding the description on each product page. Our client needed this data point so that they could have the description display in their app. Unlike the rest of the data points, `body_html` could not be taken from the JSON, and had to be scraped before the URL is converted from a `.html` to a `.ajax` extension.  
 <br/>  
 To accomplish this, I added a new selector to `site_objects.js` called **`bodyHtmlSelector`** which gets the container surrounding the description on the product page. 
 
@@ -118,4 +118,6 @@ The Lightspeed scraper alone gets 1150 products in 12.5 minutes across 7 stores.
 <br/>  
   
 ## Conclusion
-This project allowed me to strengthen the skills I already had in web development, while also developing new ones. I was able to display my fore-thought about the future of a project, my problem-solving skills, my ability to learn new languages, tools, and techniques quickly, on a project that will provide value to our client for years to come.
+This project allowed me to strengthen the skills I already had in web development, while also developing new ones. I was able to display my fore-thought about the future of a project, my problem-solving skills, my ability to learn new languages, tools, and techniques quickly, on a project that will provide value to our client for years to come.  
+<br/>   
+You can go to this link to check out the project: [ShopHopper 2022 Capstone Project](https://github.com/ShopHopper-WebScraper-Project/2022-Webscraper-Project)
