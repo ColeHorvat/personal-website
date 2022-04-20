@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import STRING_CONSTANTS from '../Strings'
+import STRING_CONSTANTS from './Strings'
 
 const HEADER_ANIM_DURATION = 0.75
 
@@ -9,7 +9,7 @@ const leftText = {
     visible : { opacity: 1, x:0}
 }
 
-function ProjectHeader() {
+function SubHeader(props) {
     return (
         <motion.div
             initial="hidden"
@@ -17,9 +17,9 @@ function ProjectHeader() {
             variants={leftText} 
             transition={{ duration: HEADER_ANIM_DURATION, delay: 0.25}}
             className="px-5 pb-10 pt-5 text-center lg:text-left">
-            <motion.h2 className="text-5xl font-bold">Projects</motion.h2>
+            <motion.h2 className="text-5xl font-bold">{props.title}</motion.h2>
         </motion.div>
     )
 }
 
-export default ProjectHeader
+export default SubHeader
