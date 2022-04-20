@@ -61,7 +61,7 @@ const STRING_CONSTANTS = {
         title : 'ShopHopper Web Scraper',
         description : 'As a capstone project, two other peers and I created a set of web scrapers for ShopHopper to scrape products from local stores. My main contribution was the Lightspeed implementation.',
         tools : 'Node.js, Javascript',
-        versionUrl : 'https://github.com/ShopHopper-WebScraper-Project/2022-Webscraper-Project'
+        versionUrl : 'https://github.com/ColeHorvat/2022-Webscraper-Project'    
     },
 
     //FOOTER CONSTANTS

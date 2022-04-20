@@ -120,4 +120,4 @@ The Lightspeed scraper alone gets 1150 products in 12.5 minutes across 7 stores.
 ## Conclusion
 This project allowed me to strengthen the skills I already had in web development, while also developing new ones. I was able to display my fore-thought about the future of a project, my problem-solving skills, my ability to learn new languages, tools, and techniques quickly, on a project that will provide value to our client for years to come.  
 <br/>   
-You can go to this link to check out the project: [ShopHopper 2022 Capstone Project](https://github.com/ShopHopper-WebScraper-Project/2022-Webscraper-Project)
+You can go to this link to check out the project: [ShopHopper 2022 Capstone Project](https://github.com/ColeHorvat/2022-Webscraper-Project)
