@@ -31,11 +31,9 @@ export default function Home({ allPostsData }) {
 
         <SubHeader title="Projects"/>
         <Grid>
-            <GridItem project={STRING_CONSTANTS.UNIGRAMS_WEBSITE} animDelay={1}/>
-            <GridItem project={STRING_CONSTANTS.SHOPHOPPER} animDelay={1.25}/>
-            <GridItem project={STRING_CONSTANTS.SOULLESS} animDelay={1.5}/>
-            <GridItem project={STRING_CONSTANTS.TASK_TIMER} animDelay={1.75}/>
-            <GridItem project={STRING_CONSTANTS.LOST_AND_FOUND} animDelay={2}/>
+            {STRING_CONSTANTS.PROJECTS.map((project, i) => (
+                <GridItem project={project} animDelay={0.25 * i} key={i} />
+            ))}
         </Grid>
 
         <SubHeader title="Blog"/>
